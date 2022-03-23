@@ -1,0 +1,20 @@
+string = str(input("введите текст на русском:"))
+for i in string:
+        print('все символы:'+i)#все символы
+ydalenie_str=string[:2] + string[3:]#пропускаем третий символ
+print('пропускаем третий символ:'+ydalenie_str)
+if "С" in string or 'с' in string:#сообщает
+     print("Есть буква с")
+else:
+     print("Нет буквы с")
+# или так if i == "с" or i == "С":
+    #print("Есть буква с")
+#else:
+    #print("Нет буквы с")
+print('количество символов',len(string))# количество символов
+
+ydalenie_poslednego = string [0:-1]#удаление последнего
+print('удаление последнего:'+ydalenie_poslednego)
+#или так a =(len(string))
+#b=string[:a-1]
+#print(a)
