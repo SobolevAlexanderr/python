@@ -1,0 +1,54 @@
+import math
+import random
+operation= input('выберите операцию +,-,/,*,^,random,mod,!,arccos:')
+
+
+if operation == '+':
+    number_one = float(input('Ведите первое число '))
+    number_two = float(input('Ведите первое число '))
+    result_plus = number_one + number_two
+    print('ответ',result_plus)
+elif operation == '-':
+    number_one = float(input('Ведите первое число '))
+    number_two = float(input('Ведите первое число '))
+    result_minus = number_one / number_two
+    print('ответ',result_minus)
+elif operation == '/':
+    number_one = float(input('Ведите первое число '))
+    number_two = float(input('Ведите первое число '))
+    result_division = number_one / number_two
+    print('ответ',result_division)
+elif operation == '*':
+    number_one = float(input('Ведите первое число '))
+    number_two = float(input('Ведите первое число '))
+    result_multiply = number_one * number_two
+    print('ответ', result_multiply)
+elif operation == '*':
+    number_one = float(input('Ведите первое число '))
+    number_two = float(input('Ведите первое число '))
+    result_multiply = number_one * number_two
+    print('ответ', result_multiply)
+elif operation == '^':
+    number_one = float(input('Ведите первое число '))
+    number_two = float(input('Ведите первое число '))
+    result_pow = math.pow(number_one,number_two)
+    print('ответ', result_pow)
+elif operation == 'random':
+    result_random =(random.random())
+    print('ответ', result_random)
+elif operation == 'mod':
+    number_one = float(input('Ведите первое число '))
+    result_mod =abs(number_one)
+    print('ответ', result_mod)
+elif operation =='!':
+    number_one=int(input('Ведите целое число '))
+    a=1
+    for i in range(2,number_one+1):
+        a*=i
+    print(('ответ', a))
+elif operation =='arccos':
+    number_one = float(input('Ведите число [-1,1] '))
+    result_arccos= math.acos(number_one)
+    print('ответ', result_arccos)
+else:
+    print('неправильно')
