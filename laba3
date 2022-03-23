@@ -23,11 +23,6 @@ elif operation == '*':
     number_two = float(input('Ведите первое число '))
     result_multiply = number_one * number_two
     print('ответ', result_multiply)
-elif operation == '*':
-    number_one = float(input('Ведите первое число '))
-    number_two = float(input('Ведите первое число '))
-    result_multiply = number_one * number_two
-    print('ответ', result_multiply)
 elif operation == '^':
     number_one = float(input('Ведите первое число '))
     number_two = float(input('Ведите первое число '))
