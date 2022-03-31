@@ -1,6 +1,6 @@
-Word1 = input(str('Введите название товар №1:'))
-Word2 = input(str('Введите название товар №2:'))
-Word3 = input(str('Введите название товар №3:'))
+Word1 = input(str('Введите название товара №1:'))
+Word2 = input(str('Введите название товара №2:'))
+Word3 = input(str('Введите название товара №3:'))
 WordLow1 = str.lower(Word1)#нижний
 WordLow2 = str.lower(Word2)
 WordLow3 = str.lower(Word3)
