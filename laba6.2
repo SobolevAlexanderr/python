@@ -26,3 +26,36 @@ elif operation == 'arccos':
     result = arc(number)
     print('Ответ: ', result)
     quit()
+number_one = float(input('Ведите первое число '))
+number_two = float(input('Введите второе число:'))
+def sum(number_one, number_two):
+    result_plus = number_one + number_two
+    return result_plus
+def raz(number_one, number_two):
+    result_minus = number_one - number_two
+    return result_minus
+def umn(number_one, number_two):
+    result_multiply = number_one * number_two
+    return result_multiply
+def de(number_one, number_two):
+    result_division = number_one / number_two
+    return result_division
+def po(number_one, number_two):
+    result_pow = pow (number_one,number_two)
+    return result_pow
+
+if operation == '-':
+    result = raz(number_one ,number_two)
+    print('Ответ: ', result)
+elif operation == '+':
+    result = sum(number_one ,number_two)
+    print('Ответ: ',result)
+elif operation == '*':
+    result = umn(number_one ,number_two)
+    print('Ответ: ',result)
+elif operation == '/':
+    result = de(number_one ,number_two)
+    print('Ответ: ', result)
+elif operation == '^':
+    result = po(number_one ,number_two)
+    print('Ответ: ', result)
