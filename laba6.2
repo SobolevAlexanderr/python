@@ -1,0 +1,28 @@
+import math
+import random
+operation= input('выберите операцию +,-,/,*,^,random,mod,!,arccos:')
+
+if operation=='random':
+    Result_Random = (random.randint(0, 100))
+    print ('Ответ: ', Result_Random)
+    quit()
+number = float(input('Ведите число если выбрали mod,!,arccos '))
+def mod(number):
+    result_mod=abs(number)
+    return result_mod
+def fac(number):
+    result_fac=math.factorial(number)
+    return result_fac
+def arc(number):
+    result_arc=math.acos(number)
+    return result_arc
+if operation == 'mod':
+    result = mod(number)
+    print('Ответ: ', result)
+elif operation == '!':
+    result = fac(number)
+    print('Ответ: ',result)
+elif operation == 'arccos':
+    result = arc(number)
+    print('Ответ: ', result)
+    quit()
