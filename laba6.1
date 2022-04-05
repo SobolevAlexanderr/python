@@ -8,3 +8,15 @@ def lenght(y):
 def dic(x,y):
     bob=dict(zip(x,y))
     return bob
+    result =spl(one)
+print(result)
+count_one = lenght(result)
+print("Слов в списке:",count_one )
+two = input(" Введите второй список с таким же количеством символов через запятую: ")
+res =spl(two)
+if (lenght(res) != lenght(result)):
+    print('ввели неверное количество слов')
+    exit()
+else:
+    dom=dic(result,res)
+    print(dom)
