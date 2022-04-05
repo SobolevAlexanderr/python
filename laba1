@@ -1,0 +1,8 @@
+border_number = int(input('enter border number:'))
+arbitrary_number =int(input('enter an arbitrary number:'))
+if arbitrary_number < border_number:
+    print('число меньше пограничного')
+elif arbitrary_number > 3 * border_number:
+    print('число больше пограничного более, чем в 3 раза')
+elif arbitrary_number > border_number:
+    print('число больше пограничного')
