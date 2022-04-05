@@ -3,3 +3,11 @@ one =set(one.split(',')) # split сканирует строку и раздел
 print(one)
 count_one = len(one) #set множество неповторяюшеися элементы
 print("Слов в списке:", len(one)) #len количество слов
+two = input(" Введите второй список с таким же количеством символов через запятую: ")
+two = set(two.split(','))
+if (len(two)) != (len(one)):
+    print('ввели неверное количество слов')
+    exit()
+else:
+    dictionary = dict(zip(one, two))#dict словарь zip объединяет элементы
+print(dictionary)
