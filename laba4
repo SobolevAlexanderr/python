@@ -7,15 +7,15 @@ WordLow3 = str.lower(Word3)
 WordUpp1 = str.upper(Word1)#верхний
 WordUpp2 = str.upper(Word2)
 WordUpp3 = str.upper(Word3)
-Wordup1 = str.upper(Word1)#capitalize первый символ верхний
-Wordup2 = str.upper(Word2)
-Wordup3 = str.upper(Word3)
+Wordup1 = str.capitalize(Word1)#capitalize первый символ верхний
+Wordup2 = str.capitalize(Word2)
+Wordup3 = str.capitalize(Word3)
 Wordtwo1 = input(str('Введите количество товара №1 : '))
 Wordtwo2 = input(str('Введите количество товара №2 : '))
 Wordtwo3 = input(str('Введите количество товара №3 : '))
 print(WordLow1, WordLow2, WordLow3)
 print(WordUpp1, WordUpp2, WordUpp3)
-print(Wordup1[0], Wordup2[0], Wordup3[0])#первый символ
+print(Wordup1, Wordup2, Wordup3)#первый символ
 print('Товар: {0} | количество: {1}'.format(Word1, Wordtwo1))
 print('Товар: {0} | количество: {1}'.format(Word2, Wordtwo2))
 print('Товар: {0} | количество: {1}'.format(Word3, Wordtwo3))
