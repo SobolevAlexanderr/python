@@ -1,3 +1,4 @@
+
 def spl(y):
     bob = input(y).split(',')
     print (bob)
@@ -5,8 +6,9 @@ def spl(y):
 
 
 def lenght(y):
-    bob = len(y)
-    return bob
+    bib = len(y)
+    print("Слов в списке:", bib)
+    return bib
 
 
 def dic(x, y):
@@ -16,12 +18,12 @@ def dic(x, y):
 
 
 one=spl("Введите через запятую список слов: ")
-count_one = lenght(one)
-print("Слов в списке:", count_one)
+lenght(one)
+
 two = spl( "введите еще один список с таким же количеством слов ")
-if lenght(one) != lenght(two):
+if len(one) != len(two):
     print('ввели неверное количество слов')
     exit()
 else:
-    dom = dic(result, res)
+    dom = dic(one, two)
 print(dom)
