@@ -1,22 +1,30 @@
 one = input("Введите список неповторяюшихся слов через запятую:")
+
+
 def spl(y):
-     bob=y.split(',')
-     return bob
+    bob = y.split(',')
+    return bob
+
+
 def lenght(y):
-    bob=len(y)
+    bob = len(y)
     return bob
-def dic(x,y):
-    bob=dict(zip(x,y))
+
+
+def dic(x, y):
+    bob = dict(zip(x, y))
     return bob
-result =spl(one)
+
+
+result = spl(one)
 print(result)
 count_one = lenght(result)
-print("Слов в списке:",count_one )
+print("Слов в списке:", count_one)
 two = input(" Введите второй список с таким же количеством символов через запятую: ")
-res =spl(two)
-if (lenght(res) != lenght(result)):
+res = spl(two)
+if lenght(res) != lenght(result):
     print('ввели неверное количество слов')
     exit()
 else:
-    dom=dic(result,res)
-    print(dom)
+    dom = dic(result, res)
+print(dom)
