@@ -51,4 +51,4 @@ while True:
     elif Vod in ('+', '-', '*', '^', '/'):
         operation = Calculator()
         operation.ordinary(Vod)
-        break
+    break
