@@ -1,61 +1,86 @@
 import math
 import random
-operation= input('выберите операцию +,-,/,*,^,random,mod,!,arccos:')
+operation = input('выберите операцию +,-,/,*,^,random,mod,!,arccos:')
 
-if operation=='random':
+if operation == 'random':
     Result_Random = (random.randint(0, 100))
-    print ('Ответ: ', Result_Random)
+    print('Ответ: ', Result_Random)
     quit()
-number = float(input('Ведите число если выбрали mod,!,arccos '))
+
+
 def mod(number):
-    result_mod=abs(number)
+    result_mod = abs(number)
     return result_mod
+
+
 def fac(number):
-    result_fac=math.factorial(number)
+    result_fac = math.factorial(number)
     return result_fac
+
+
 def arc(number):
     result_arc=math.acos(number)
     return result_arc
+
+
 if operation == 'mod':
+    number = float(input('Ведите число если выбрали mod,!,arccos '))
     result = mod(number)
     print('Ответ: ', result)
-elif operation == '!':
+    quit()
+if operation == '!':
+    number = float(input('Ведите число если выбрали mod,!,arccos '))
     result = fac(number)
-    print('Ответ: ',result)
-elif operation == 'arccos':
+    print('Ответ: ', result)
+    quit()
+if operation == 'arccos':
+    number = float(input('Ведите число если выбрали mod,!,arccos '))
     result = arc(number)
     print('Ответ: ', result)
     quit()
 number_one = float(input('Ведите первое число '))
 number_two = float(input('Введите второе число:'))
+
+
 def sum(number_one, number_two):
     result_plus = number_one + number_two
     return result_plus
+
+
 def raz(number_one, number_two):
     result_minus = number_one - number_two
     return result_minus
+
+
 def umn(number_one, number_two):
     result_multiply = number_one * number_two
     return result_multiply
+
+
 def de(number_one, number_two):
     result_division = number_one / number_two
     return result_division
+
+
 def po(number_one, number_two):
-    result_pow = pow (number_one,number_two)
+    result_pow = pow(number_one, number_two)
     return result_pow
 
+
 if operation == '-':
-    result = raz(number_one ,number_two)
+    result = raz(number_one, number_two)
     print('Ответ: ', result)
 elif operation == '+':
-    result = sum(number_one ,number_two)
-    print('Ответ: ',result)
+    result = sum(number_one, number_two)
+    print('Ответ: ', result)
 elif operation == '*':
-    result = umn(number_one ,number_two)
-    print('Ответ: ',result)
+    result = umn(number_one, number_two)
+    print('Ответ: ', result)
 elif operation == '/':
-    result = de(number_one ,number_two)
+    result = de(number_one, number_two)
     print('Ответ: ', result)
 elif operation == '^':
-    result = po(number_one ,number_two)
+    result = po(number_one, number_two)
     print('Ответ: ', result)
+quit()
+
