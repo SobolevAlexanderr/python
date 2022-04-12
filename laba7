@@ -1,0 +1,23 @@
+
+import math
+import random
+
+
+class Calculator:
+
+
+    def improved(self, Vod):
+
+        number = float(input('Ведите число если выбрали mod,!,arccos '))
+
+        if Vod == 'mod':
+            print('Ответ: ', math.fabs(number))
+        if Vod == 'arccos':
+            print('Ответ: ', math.acos(number))
+        if Vod == '!':
+            print('Ответ: ', math.factorial(number))
+
+
+
+    def random(self):
+        print(random.randint(0, 100))
