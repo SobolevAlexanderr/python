@@ -21,3 +21,34 @@ class Calculator:
 
     def random(self):
         print(random.randint(0, 100))
+
+
+    def ordinary(self, Vod):
+        number_one = float(input('Ведите первое число '))
+        number_two = float(input('Введите второе число:'))
+        if Vod == '^':
+            print('Ответ: ', pow(number_one, number_two))
+        elif Vod == '+':
+            print('Ответ: ', number_one + number_two)
+        elif Vod == '-':
+            print('Ответ: ', number_one - number_two)
+        elif Vod == '*':
+            print('Ответ: ', number_one * number_two)
+        elif Vod == '/':
+            print('Ответ: ', number_one / number_two)
+
+
+while True:
+
+    Vod = input('выберите операцию +,-,/,*,^,random,mod,!,arccos:')
+
+    if Vod in ("mod", "!", "arccos"):
+        operation = Calculator()
+        operation.improved(Vod)
+    elif Vod == "random":
+        operation = Calculator()
+        operation.random()
+    elif Vod in ('+', '-', '*', '^', '/'):
+        operation = Calculator()
+        operation.ordinary(Vod)
+        break
