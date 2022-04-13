@@ -5,7 +5,7 @@ import random
 
 class Calculator:
 
-
+    
     def improved(self, Vod):
 
         number = float(input('Ведите число если выбрали mod,!,arccos '))
@@ -40,15 +40,15 @@ class Calculator:
 
 while True:
 
-    Vod = input('выберите операцию +,-,/,*,^,random,mod,!,arccos:')
+    abc = input('выберите операцию +,-,/,*,^,random,mod,!,arccos:')
 
-    if Vod in ("mod", "!", "arccos"):
+    if abc in ("mod", "!", "arccos"):
         operation = Calculator()
-        operation.improved(Vod)
-    elif Vod == "random":
+        operation.improved(abc)
+    elif abc == "random":
         operation = Calculator()
         operation.random()
-    elif Vod in ('+', '-', '*', '^', '/'):
+    elif abc in ('+', '-', '*', '^', '/'):
         operation = Calculator()
-        operation.ordinary(Vod)
+        operation.ordinary(abc)
     break
