@@ -8,18 +8,18 @@ if operation == 'random':
     quit()
 
 
-def mod(number):
-    result_mod = abs(number)
+def mod(num):
+    result_mod = abs(num)
     return result_mod
 
 
-def fac(number):
-    result_fac = math.factorial(number)
+def fac(num):
+    result_fac = math.factorial(num)
     return result_fac
 
 
-def arc(number):
-    result_arc=math.acos(number)
+def arc(num):
+    result_arc = math.acos(num)
     return result_arc
 
 
@@ -42,28 +42,28 @@ number_one = float(input('Ведите первое число '))
 number_two = float(input('Введите второе число:'))
 
 
-def sum(number_one, number_two):
-    result_plus = number_one + number_two
+def sum(numb1, numb):
+    result_plus = numb1 + numb
     return result_plus
 
 
-def raz(number_one, number_two):
-    result_minus = number_one - number_two
+def raz(numb1, numb):
+    result_minus = numb1 - numb
     return result_minus
 
 
-def umn(number_one, number_two):
-    result_multiply = number_one * number_two
+def umn(numb1, numb):
+    result_multiply = numb1 * numb
     return result_multiply
 
 
-def de(number_one, number_two):
-    result_division = number_one / number_two
+def de(numb1, numb):
+    result_division = numb1 / numb
     return result_division
 
 
-def po(number_one, number_two):
-    result_pow = pow(number_one, number_two)
+def po(numb1, numb):
+    result_pow = pow(numb1, numb)
     return result_pow
 
 
@@ -83,4 +83,5 @@ elif operation == '^':
     result = po(number_one, number_two)
     print('Ответ: ', result)
 quit()
+
 
